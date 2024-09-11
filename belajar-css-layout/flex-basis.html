@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+        }
+        .content{
+            background-color: aqua;
+            border: 2px solid blue;
+            padding: 5px;
+            margin: 5px;
+        }
+        .small{
+            flex-grow: 1;
+        }
+        .large{
+            flex-grow: 2;
+        }
+        .content1{
+            flex-basis: 300px;
+            flex-shrink: 0;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content content1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat iusto expedita maiores fuga soluta explicabo asperiores ullam numquam perspiciatis, voluptate distinctio, at vitae delectus obcaecati nisi! Fuga officia et vitae.</div>
+        <div class="content content2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat iusto expedita maiores fuga soluta explicabo asperiores ullam numquam perspiciatis, voluptate distinctio, at vitae delectus obcaecati nisi! Fuga officia et vitae.</div>
+        <div class="content content3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat iusto expedita maiores fuga soluta explicabo asperiores ullam numquam perspiciatis, voluptate distinctio, at vitae delectus obcaecati nisi! Fuga officia et vitae.</div>
+
+    </div>
+</body>
+</html>

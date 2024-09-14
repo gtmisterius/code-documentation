@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tipe data object</title>
+</head>
+<body>
+<script>
+    const orang = {
+        "nama" : "Bagus Canrasa",
+        alamat : "Indonesia",
+        umur : 30
+    };
+
+    //Menambahkan atau Mengubah
+    //orang["nama"] = "Bagus Canrasa";
+    //orang["alamat"] = "Indonesia";
+    //orang["umur"] = 30;
+
+    console.info(`Nama : ${orang.nama}`);
+    console.info(`Alamat : ${orang.alamat}`);
+    console.info(`Umur : ${orang.umur}`);
+
+    console.table(orang);
+
+    //Menghapus
+    delete orang["umur"];
+
+    console.table(orang);
+
+</script>
+</body>
+</html>

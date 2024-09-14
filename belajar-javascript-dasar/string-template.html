@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>string template</title>
+</head>
+<body>
+<script>
+    const name = "Bagus Canrasa";
+    const template = `Name : ${name}`;
+
+    console.info(template);
+
+    const nilai = 50;
+    const  template2 = `Name : ${name}, Lulus : ${nilai > 70}`;
+
+    console.info(template2);
+
+    let multiLineString = `
+        Nama saya adalah bagus canrasa
+        Hello World
+        hahahaha
+        tester `;
+
+    document.writeln("<pre>")
+    document.writeln(multiLineString)
+    document.writeln("</pre>")
+</script>
+</body>
+</html>

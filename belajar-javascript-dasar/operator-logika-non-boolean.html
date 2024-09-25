@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>operator logika non boolean</title>
+</head>
+<body>
+<script>
+    console.info("Hello" || "") //hello
+    console.info(""|| []) //[]
+    console.info("0" || "NOL") //0
+    console.info( 0 || "NOL") //NOL
+    console.info( null || "NULL") //NULL
+    console.info( undefined || "UNDEFINED") //UNDEFINED
+    console.info( 0 || false) //false
+
+    const person = {
+        firstName: "Bagus",
+        lastName: "canrasa"
+    };
+
+    const name = person.firstName || person.lastName;
+    console.info(name); //Bagus
+
+    console.info("Hello" && ``)
+    console.info("" && [])
+    console.info("" && "NOL")
+
+</script>
+</body>
+</html>

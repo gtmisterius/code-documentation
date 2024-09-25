@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>operator in</title>
+</head>
+<body>
+<script>
+    const person = {
+        firstName: "Bagus",
+        lastName: "Canrasas"
+    };
+
+    if("firstName" in person) {
+        alert(`Hello ${person.firstName}`);
+    } else {
+        alert("Hello");
+    }
+
+    const student = {
+        firstName: "Bagus",
+        middleName: undefined,
+        lastName: "Canrasa"
+    }
+
+    if("middleName" in student) {
+        alert(`hello ${student.middleName}`);
+    }else{
+        alert("Hello Student");
+    }
+
+    const names = [null, "Bagus", null];
+    const result = 0 in names;
+    document.writeln(`<p>${result}</p>`);
+
+</script>
+</body>
+</html>

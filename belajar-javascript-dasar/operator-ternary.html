@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>operator ternary</title>
+</head>
+<body>
+<script>
+
+    const nilai = 70;
+    let ucapan;
+
+    if (nilai >= 75){
+        ucapan = "selamat anda lulus";
+    } else {
+        ucapan = "silahkan coba lagi";
+    }
+
+    document.writeln(`<p>${ucapan}</p>)`;
+
+    const nilai = 60;
+    const ucapan = nilai >= 75 ? "selamat anda lulus" : "silahkan coba lagi";
+    console.log(ucapan);
+
+    let kecepatan = 90;
+    let pesan = kecepatan >= 120 ? 'Terlalu Cepat' : kecepatan >= 80 ? 'Cepat' : 'Oke';
+
+    console.log(pesan);
+
+</script>
+</body>
+</html>
